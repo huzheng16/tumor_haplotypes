@@ -1038,19 +1038,10 @@ wt_final = wt(end,:);
 %%% Estimates
     %%% 1.  THETA
       
-            mean_theta = sum(wt_final.*THETA_SAMPLES)
+            mean_theta = sum(wt_final.*THETA_SAMPLES);
+            var_theta = sum(wt_final.*((THETA_SAMPLES - mean_theta).^2));
             
-            
-    %%% 2.  K_ratio
-         mean_k_ratio = sum(wt_final.*K_RATIO_SAMPLES)
-         
-     %%% 3.  freq
-              mati = FREQ_SAMPLES.*repmat(wt_final,4,1);
-              mean_freq = sum(mati')
-     
-
-        
-        
+    
     
      
      
