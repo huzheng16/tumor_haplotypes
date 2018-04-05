@@ -1,0 +1,3 @@
+This file gives the detailed instruction on how to use the main script for inferring haplotypes.
+The algorithm is implemented as a function: fn_haplo_inf.m
+The script: main_script.m loads the data for patients and returns the estimates of the haplotypes and the proportions.
